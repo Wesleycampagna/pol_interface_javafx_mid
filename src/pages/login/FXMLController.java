@@ -11,6 +11,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
 /**
@@ -18,18 +19,35 @@ import javafx.scene.control.Label;
  * @author wesley
  */
 public class FXMLController extends ControlPages {
+        
+    @FXML
+    private Label close_app;
     
     @FXML
-    private Label label;
+    private Button test;
     
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private Button button;
+    
+    @FXML
+    private Label label_login;
+    
+    @FXML
+    private Label label_password;
+    
+    @FXML
+    private void handleButtonAction() {
+        changePage(PoliciaPages.MAIN_PAGE_DEL);
+    }
+    
+    @FXML
+    private void closeApplication() {
+        changePage(PoliciaPages.MAIN_PAGE_DEL);
     }
 
-    public void handleButtonToggle(){
-        changePage(PoliciaPages.TESTE);
+    @FXML
+    private void handleButtonToggle(ActionEvent event){
+        changePage(PoliciaPages.MAIN_PAGE_DEL);
         //label.setText("teste");
     }
     

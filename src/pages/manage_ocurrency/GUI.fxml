@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="500.0" minWidth="960.0" prefHeight="500.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.manage_ocurrency.FXMLController">
+   <children>
+      <AnchorPane layoutY="-29.0" prefHeight="541.0" prefWidth="300.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="660.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <ListView layoutY="-1.0" prefHeight="541.0" prefWidth="301.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <Label fx:id="dd" layoutX="23.0" layoutY="6.0" onInputMethodTextChanged="#changeThisPage" prefHeight="15.0" prefWidth="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="9.0" layoutY="633.0" prefHeight="20.0" prefWidth="960.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="480.0">
+         <children>
+            <Label layoutX="38.0" prefHeight="20.0" prefWidth="349.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="38.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="20.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1080.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <MenuBar layoutX="169.0" minHeight="20.0" prefHeight="30.0" prefWidth="960.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="300.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="14.0" text="Crime e Envolvidos" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="4.0" layoutY="39.0" prefHeight="20.0" prefWidth="180.0" text="crime/infraçao:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="82.0" prefHeight="20.0" prefWidth="180.0" text="Comunicante:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="4.0" layoutY="164.0" prefHeight="20.0" prefWidth="180.0" text="autor:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Accordion layoutX="8.0" layoutY="131.0" AnchorPane.bottomAnchor="-50.0" AnchorPane.topAnchor="131.0">
+              <panes>
+                <TitledPane animated="false" text="Demais envolvidos">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <Label layoutX="119.0" layoutY="47.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="129.0" layoutY="57.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="129.0" layoutY="57.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="300.0" layoutY="280.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="250.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="70.0" layoutY="19.0" text="Evidencias" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ListView layoutX="10.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="520.0" layoutY="265.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="250.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="36.0" layoutY="12.0" text="Equipe Policial" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ListView layoutX="23.0" layoutY="49.0" prefHeight="130.0" prefWidth="153.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="-7.0" layoutY="45.0" prefHeight="20.0" prefWidth="180.0" text="crime/infraçao:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="53.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="530.0" layoutY="275.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="740.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-41.0" layoutY="18.0" text="Configuraçao da Ocorrencia" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="180.0" text="id da Ocorrencia:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="180.0" text="delegacia:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="180.0" text="status juridico:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="180.0" text="status:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="125.0" layoutY="43.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="135.0" layoutY="53.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="135.0" layoutY="53.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="135.0" layoutY="53.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="310.0" layoutY="40.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="47.0" layoutY="15.0" text="Local da Ocorrencia" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="33.0" prefHeight="20.0" prefWidth="180.0" text="Logradouro:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="101.0" prefHeight="20.0" prefWidth="180.0" text="numero:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="148.0" prefHeight="20.0" prefWidth="180.0" text="Complemento:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="82.0" layoutY="222.0" prefHeight="20.0" prefWidth="180.0" text="cep:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="110.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="82.0" layoutY="248.0" prefHeight="20.0" prefWidth="180.0" text="bairro:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="297.0" prefHeight="20.0" prefWidth="180.0" text="Cidade:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="84.0" layoutY="355.0" prefHeight="20.0" prefWidth="180.0" text="Estado:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label alignment="CENTER_RIGHT" layoutX="82.0" layoutY="397.0" prefHeight="20.0" prefWidth="180.0" text="Referencia:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="190.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="125.0" layoutY="39.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="20.0" text="*" wrapText="true" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="110.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="150.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="135.0" layoutY="49.0" prefHeight="30.0" prefWidth="95.0" text="*" wrapText="true" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="190.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="320.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="740.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-15.0" layoutY="8.0" text="Dados Temporais" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="24.0" layoutY="87.0" text="Ultima modificaçao:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-26.0" layoutY="53.0" text="Data de Criaçao:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-26.0" layoutY="81.0" text="Data da Ocorrencia:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" layoutX="-16.0" layoutY="91.0" text="Hora da Ocorrencia:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="143.0" layoutY="39.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="153.0" layoutY="49.0" prefHeight="20.0" text="*" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="130.0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

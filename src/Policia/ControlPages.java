@@ -10,9 +10,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import static lib.Constants.main_stage;
 import lib.Page;
 
 /**
@@ -29,21 +32,31 @@ public abstract class ControlPages implements Initializable {
     
     protected void changePage(Page page) {
         try {
-            AnchorPane pane = FXMLLoader.load(getClass().getResource(page.getPath()));
-            rootPane.getChildren().setAll(pane);
             
-            Stage stage = (Stage) rootPane.getScene().getWindow();
-
-            stage.centerOnScreen();
-            stage.setHeight(pane.getPrefHeight());
-            stage.setWidth(pane.getPrefWidth());
+            Parent pane = FXMLLoader.load(getClass().getResource(page.getPath()));
+            
+            //rootPane.getChildren().setAll(pane);
+            
+            Scene scene = new Scene(pane);
+            
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.centerOnScreen(); 
             
             stage.setTitle(page.getTitle());
 
+            main_stage.close();
+
+            stage.show();
             
             Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
             stage.setX((primScreenBounds.getWidth() - stage.getWidth()) / 2);
             stage.setY((primScreenBounds.getHeight() - stage.getHeight()) / 2);
+           
+            main_stage = stage;
+            
         } catch(IOException ex) {
             System.out.println("Tratar error");
         }

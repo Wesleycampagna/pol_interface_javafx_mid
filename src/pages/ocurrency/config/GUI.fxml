@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.ocurrency.config.FXMLController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="500.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="332.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Salvar" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="450.0" />
+      <Button layoutX="500.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Sair" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="280.0" />
+      <Separator layoutX="177.0" layoutY="110.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="617.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="617.0" layoutY="140.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="617.0" AnchorPane.rightAnchor="177.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="192.0" layoutY="15.0" prefHeight="417.0" prefWidth="414.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="190.0">
+         <children>
+            <Separator layoutX="210.0" orientation="VERTICAL" prefHeight="417.0" prefWidth="4.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="180.0" text="id da Ocorrencia" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="30.0" />
+            <Label layoutX="226.0" layoutY="38.0" prefHeight="20.0" prefWidth="180.0" text="no" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="71.0" prefHeight="20.0" prefWidth="180.0" text="delegacia *" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="80.0" />
+            <ComboBox layoutX="220.0" layoutY="68.0" prefWidth="150.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="117.0" prefHeight="20.0" prefWidth="180.0" text="status juridico *" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="130.0" />
+            <ComboBox layoutX="220.0" layoutY="108.0" prefWidth="150.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="130.0" />
+            <Accordion layoutX="220.0" layoutY="180.0" prefHeight="93.0" prefWidth="170.0">
+               <panes>
+                <TitledPane animated="false" prefHeight="185.0" prefWidth="170.0" text="ativa">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="ativa" AnchorPane.topAnchor="0.0" />
+                              <CheckBox layoutX="14.0" layoutY="34.0" mnemonicParsing="false" text="finalizada" AnchorPane.topAnchor="30.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+               </panes>
+            </Accordion>
+            <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="152.0" prefHeight="20.0" prefWidth="180.0" text="status" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="180.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

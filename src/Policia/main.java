@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import lib.Page;
+import static lib.Constants.main_stage;
 
 /**
  *
@@ -26,6 +27,10 @@ public class main extends Application {
         
         //"FXMLDocument.fxml"
         Scene scene = new Scene(root);
+        
+        main_stage = stage;
+        
+        stage.centerOnScreen();
         
         stage.setTitle(login.getTitle());
         stage.setScene(scene);

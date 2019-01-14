@@ -1,0 +1,13 @@
+- melhorar listener quando da screen de contexto sim ou nao o retorno da resposta 
+
+context screen esta com um variavel chamada tt e session com mesmo nome --> remodelar depois quando descoberto como voltar
+
+Em main_page controller o label esta como dd
+
+ver listview com detalhes (imagens, ...)
+
+click duplo -> listener
+
+ver api pdf
+
+

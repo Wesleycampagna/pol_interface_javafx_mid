@@ -3,34 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pages.teste;
+package pages.ocurrency.team;
 
-import Policia.ControlPages;
-import Policia.PoliciaPages;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.fxml.Initializable;
 
 /**
  * FXML Controller class
  *
  * @author wesley
  */
-public class FXMLController extends ControlPages {
+public class FXMLController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
-    
-    @FXML 
-    private Label dd;
-    
-    public void back(){
-        changePage(PoliciaPages.LOGIN);
-    }
-    
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

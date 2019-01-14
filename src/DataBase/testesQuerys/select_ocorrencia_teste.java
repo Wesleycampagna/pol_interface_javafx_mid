@@ -5,6 +5,7 @@
  */
 package DataBase.testesQuerys;
 
+import Conceitos.Endereco;
 import Conceitos.Ocorrencia;
 import Conceitos.Policial;
 import DataBase.ControladoraBD;
@@ -47,6 +48,18 @@ public class select_ocorrencia_teste {
         
         if (oc.getEndereco() != null){
             System.out.println("\n\t *** ENDERECO ****\n");
+            
+            Endereco end = oc.getEndereco();
+            
+            System.out.println("\n\t\tImprimindo...\n");
+            System.out.println("rua: " + end.getLogradouro());
+            System.out.println("nro: : " + end.getNumero());
+            System.out.println("Bairro: " + end.getBairro());
+            System.out.println("Cidade: " + end.getCidade());
+            System.out.println("Estado: " + end.getEstado());
+            System.out.println("cep: " + end.getCep());
+            System.out.println("complemento: " + end.getComplemento());
+            System.out.println("Referencia: " + end.getReferencia());
         }
         
         if (oc.getResponsavel() != null){
