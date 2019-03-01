@@ -11,6 +11,8 @@ import Policia.Session;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import lib.Constants;
 import static lib.Constants.INTERNAL;
@@ -28,6 +30,8 @@ public class FXMLController extends ControlPages{
    
     @FXML
     private MenuItem menuItemExit; 
+    private Button createOcurrency;
+    private Label dd;
         
     private static boolean result;
     
@@ -42,12 +46,18 @@ public class FXMLController extends ControlPages{
         result = pages.context_screen.FXMLController.display();  
         
         if (result)
-            changeThisPage();        
+            changeThisPage(result);        
     }
     
     
-    public void changeThisPage(){
-        changePage(PoliciaPages.LOGIN);
+    public void createNewOcurrency(){
+        
+        changePage(PoliciaPages.MANAGE_OCURRENCY);
+    }
+    
+    
+    public void changeThisPage(boolean result){
+        dd.setText("" + result);
     }
     
     

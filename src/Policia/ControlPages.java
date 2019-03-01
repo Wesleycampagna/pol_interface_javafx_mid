@@ -31,6 +31,7 @@ public abstract class ControlPages implements Initializable {
     protected AnchorPane rootPane;
     
     protected void changePage(Page page) {
+        
         try {
             
             Parent pane = FXMLLoader.load(getClass().getResource(page.getPath()));
@@ -59,6 +60,34 @@ public abstract class ControlPages implements Initializable {
             
         } catch(IOException ex) {
             System.out.println("Tratar error");
+        }
+    }
+    
+    
+    protected void openPage(Page page) {
+        
+        try {
+            
+            Parent pane = FXMLLoader.load(getClass().getResource(page.getPath()));
+            
+            Scene scene = new Scene(pane);
+            
+            Stage stage = new Stage();
+            
+            stage.setScene(scene);
+            
+            stage.centerOnScreen(); 
+            
+            stage.setTitle(page.getTitle());            
+
+            stage.show();
+            
+            Rectangle2D primScreenBounds = Screen.getPrimary().getVisualBounds();
+            stage.setX((primScreenBounds.getWidth() - stage.getWidth()) / 2);
+            stage.setY((primScreenBounds.getHeight() - stage.getHeight()) / 2);
+                       
+        } catch(IOException ex) {
+            System.out.println("Tratar error open");
         }
     }
 }

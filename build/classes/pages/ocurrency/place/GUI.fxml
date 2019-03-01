@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pages.ocurrency.config.FXMLController">
+   <children>
+      <ImageView fitHeight="593.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="593.0" fitWidth="186.0" layoutX="621.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="187.0" layoutY="120.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="179.0" AnchorPane.rightAnchor="621.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="627.0" layoutY="150.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="619.0" AnchorPane.rightAnchor="181.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="195.0" layoutY="27.0" prefHeight="463.0" prefWidth="414.0" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Separator layoutX="210.0" orientation="VERTICAL" prefHeight="417.0" prefWidth="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="206.0" AnchorPane.topAnchor="0.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="180.0" text="Logradouro *" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="20.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="96.0" prefHeight="20.0" prefWidth="180.0" text="numero *" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="90.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="143.0" prefHeight="20.0" prefWidth="180.0" text="Complemento" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="130.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="217.0" prefHeight="20.0" prefWidth="180.0" text="cep *" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="200.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="243.0" prefHeight="20.0" prefWidth="180.0" text="bairro *" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="240.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="292.0" prefHeight="20.0" prefWidth="180.0" text="Cidade *" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="280.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="350.0" prefHeight="20.0" prefWidth="180.0" text="Estado" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="350.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="12.0" layoutY="392.0" prefHeight="20.0" prefWidth="180.0" text="Referencia" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="390.0" />
+            <ListView layoutX="220.0" layoutY="50.0" prefHeight="2.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="42.0" />
+            <AnchorPane layoutX="220.0" layoutY="28.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="315.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Novo" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+            <TextField layoutX="220.0" layoutY="94.0" prefHeight="25.0" prefWidth="50.0" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="90.0" />
+            <TextField layoutX="220.0" layoutY="141.0" prefHeight="52.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="130.0" />
+            <TextField layoutX="220.0" layoutY="392.0" prefHeight="52.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="390.0" />
+            <TextField editable="false" layoutX="222.0" layoutY="348.0" prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="350.0" />
+            <TextField layoutX="226.0" layoutY="205.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="200.0" />
+            <TextField layoutX="226.0" layoutY="241.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="240.0" />
+            <Button layoutX="308.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Novo" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="310.0" />
+            <ListView layoutX="230.0" layoutY="60.0" prefHeight="2.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="302.0" />
+            <AnchorPane layoutX="217.0" layoutY="290.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="280.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="2.0" layoutY="552.0" prefHeight="20.0" prefWidth="770.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0" />
+      <AnchorPane layoutX="193.0" layoutY="490.0" prefHeight="103.0" prefWidth="416.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="197.0" AnchorPane.topAnchor="490.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Cancelar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="80.0" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Salvar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="240.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

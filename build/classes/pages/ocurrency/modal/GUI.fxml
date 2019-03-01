@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" minHeight="150.0" minWidth="200.0" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="pages.ocurrency.modal.FXMLController">
+   <children>
+      <Button layoutX="93.0" layoutY="239.0" mnemonicParsing="false" text="Selecionar" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="100.0" />
+      <Button layoutX="243.0" layoutY="239.0" mnemonicParsing="false" text="Cancelar" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="100.0" />
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="225.0" prefWidth="373.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <ListView prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+            <TextField layoutX="14.0" layoutY="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="13.0" />
+            <ImageView fx:id="search_click" fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="13.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="593.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="593.0" fitWidth="185.0" layoutX="610.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="173.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="620.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="617.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="620.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="2.0" layoutY="552.0" prefHeight="20.0" prefWidth="770.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0" />
+      <AnchorPane layoutX="195.0" layoutY="14.0" prefHeight="329.0" prefWidth="389.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Separator layoutX="210.0" orientation="VERTICAL" prefHeight="329.0" prefWidth="6.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="28.0" prefHeight="20.0" prefWidth="180.0" text="crime/infraçao *" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="30.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="20.0" layoutY="71.0" prefHeight="20.0" prefWidth="180.0" text="Comunicante *" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="70.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="153.0" prefHeight="20.0" prefWidth="180.0" text="autor *" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="140.0" />
+            <TextField layoutX="220.0" layoutY="28.0" prefHeight="25.0" prefWidth="148.0" AnchorPane.topAnchor="30.0">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Ver Codigo Civil" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TextField>
+            <ImageView fx:id="search_click" fitHeight="25.0" fitWidth="28.0" layoutX="370.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+            <ListView layoutX="220.0" layoutY="100.0" prefHeight="2.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="92.0" />
+            <AnchorPane layoutX="220.0" layoutY="78.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="307.0" layoutY="115.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Cadastrar" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0" />
+            <Button layoutX="308.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Cadastrar" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="170.0" />
+            <ListView layoutX="218.0" layoutY="164.0" prefHeight="2.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="162.0" />
+            <AnchorPane layoutX="219.0" layoutY="151.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="140.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <CheckBox layoutX="220.0" layoutY="192.0" mnemonicParsing="false" text="flagrante" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="175.0" />
+            <ComboBox layoutX="44.0" layoutY="257.0" prefWidth="150.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="210.0" />
+            <ListView layoutX="228.0" layoutY="174.0" prefHeight="2.0" prefWidth="180.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="232.0" />
+            <AnchorPane layoutX="218.0" layoutY="240.0" prefHeight="25.0" prefWidth="190.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="210.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="308.0" layoutY="273.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Cadastrar" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="240.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="193.0" layoutY="490.0" prefHeight="103.0" prefWidth="416.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0">
+         <children>
+            <Button layoutX="89.0" layoutY="58.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Salvar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="240.0" />
+            <Button layoutX="249.0" layoutY="58.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Cancelar" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="80.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="195.0" layoutY="339.0" prefHeight="148.0" prefWidth="410.0" AnchorPane.leftAnchor="195.0" AnchorPane.rightAnchor="195.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" layoutX="49.0" layoutY="18.0" prefHeight="20.0" prefWidth="180.0" text="autor:" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="10.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="180.0" text="Comunicante:" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="35.0" />
+            <Label alignment="CENTER_RIGHT" layoutX="42.0" layoutY="75.0" prefHeight="20.0" prefWidth="180.0" text="crime/infraçao:" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="60.0" />
+            <ScrollBar layoutX="417.0" layoutY="20.0" orientation="VERTICAL" prefHeight="148.0" prefWidth="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

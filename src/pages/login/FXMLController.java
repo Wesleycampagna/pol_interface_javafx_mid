@@ -13,48 +13,51 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 /**
  *
  * @author wesley
  */
 public class FXMLController extends ControlPages {
+    
+    private static final String TEXT_CLEAR = "";
         
     @FXML
     private Label close_app;
     
     @FXML
-    private Button test;
-    
-    @FXML
     private Button button;
     
     @FXML
-    private Label label_login;
+    private TextField textLogIn;
+    
     
     @FXML
-    private Label label_password;
+    private TextField textPassword;
     
     @FXML
-    private void handleButtonAction() {
+    private void handleLogInUser() {
         changePage(PoliciaPages.MAIN_PAGE_DEL);
+    }
+    
+    
+    @FXML
+    private void clearContent(){
+        textLogIn.setText(TEXT_CLEAR);
+        textPassword.setText(TEXT_CLEAR);
     }
     
     @FXML
     private void closeApplication() {
-        changePage(PoliciaPages.MAIN_PAGE_DEL);
+        
     }
+    
 
     @FXML
     private void handleButtonToggle(ActionEvent event){
         changePage(PoliciaPages.MAIN_PAGE_DEL);
-        //label.setText("teste");
     }
-    
-//    @FXML
-//    private void handleButtonToggle(ActionEvent event) {
-//        changePage(PoliciaPages.TESTE);
-//    }
     
     
     @Override
